@@ -49,8 +49,8 @@ MAVEN COMMANDS:-
 * mvn test -Dcucumber.filter.tags="@Positive"
 * mvn test -Dcucumber.filter.tags="@Negative"
 
-**FEATURE FILE:- **
-Added the feature file under:-
+**FEATURE FILE PATH:- **
+
 **src/test/resources/parallel**
 
 **Feature File Sample: **
@@ -82,8 +82,9 @@ Feature: Test the signup page functionality of MIRO webpage
   Can change the properties (chrome/firefox), to launch the specific browser or no-tag to use the browser form the config.properties file 
   
   **Have done the setup of two Runner File:-**
-1-  
-  src/test/java/testrunner/MyTestRunner.java --(This is feature supports sequence execution of test cases)
+  
+ **src/test/java/testrunner/MyTestRunner.java --(This is feature supports sequence execution of test cases)**
+ **src/test/java/parallel/ParallelRun.java --(This is feature supports parallel execution of test cases)**
   
   ```
   package testrunner;
