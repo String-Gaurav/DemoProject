@@ -25,9 +25,15 @@ Setup JAVA_HOME path
 - Install MAVEN- https://maven.apache.org/download.cgi
 Setup .M2 and MAVEN_HOME path as per the below screenshot
 ![image](https://user-images.githubusercontent.com/88622330/128636681-414f6dab-7205-4725-97be-b94fe36d5864.png)
+- Download and Import the project
+- Let MAVEN to install all the dependencies
+- Run Below MAVEN Commands in CMD
 
-- Add all the mandate dependencies in POM.XML
 
+* mvn clean
+* mvn compile
+* mvn test -Dcucumber.filter.tags="@Positive"
+* mvn test -Dcucumber.filter.tags="@Negative"
 	
 ## About Test Framework
 The framework has following features
@@ -40,7 +46,7 @@ The framework has following features
 * Hooks for to set execution -- launching the browser, taking screenshot of fail/pass test cases.
 * Implmented Thread safe to use driver for parallel execution.
 
-**TO Trigger Test Cases use below command from Command Line or from Any CICD tool like Jenkins**
+**Same Commands can be configured in CICD tools like Jenkins, TeamCity**
 
 MAVEN COMMANDS:-
 
