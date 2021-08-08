@@ -1,0 +1,7 @@
+16:07:05.746 [main] INFO  org.jsoup.Connection - Url got opened
+16:07:05.757 [main] INFO  org.jsoup.Connection - The page title :- Sign up | Miro | Online Whiteboard for Visual Collaboration
+16:07:05.932 [main] INFO  org.jsoup.Connection - Entered the username
+16:07:06.072 [main] INFO  org.jsoup.Connection - Entered the Email
+16:07:06.201 [main] INFO  org.jsoup.Connection - Entered Password
+16:07:06.412 [main] INFO  org.jsoup.Connection - Clicked MIRO terms checkbox
+16:07:06.540 [main] INFO  org.jsoup.Connection - Click on Get Started button

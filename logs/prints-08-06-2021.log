@@ -1,0 +1,4 @@
+23:53:59.036 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 92.0.4515.107 found in cache
+23:53:59.038 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Gaurav Singh\.cache\selenium\chromedriver\win32\92.0.4515.107\chromedriver.exe
+23:54:08.597 [main] INFO  org.jsoup.Connection - Url got opened
+23:54:08.609 [main] INFO  org.jsoup.Connection - The page title :- Sign up | Miro | Online Whiteboard for Visual Collaboration
