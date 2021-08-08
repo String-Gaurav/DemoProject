@@ -12,12 +12,12 @@ Feature: Test the signup page functionality of MIRO webpage
     And Enter the password "<Password>"
     And click on Miro Terms checkbox
     And click on Get Started Button
-    Then Verify the email address after singing up
+    Then Verify the email address after singing up "<EmailVerificationMessage>"
 
     Examples:
 
-      | Name   | Password    |
-      | Gaurav | test@123456 |
+      | Name   | Password    | EmailVerificationMessage |
+      | Gaurav | test@123456 | Check your email         |
 
 
   Scenario: TC-Pos_02-Checking social media signup links

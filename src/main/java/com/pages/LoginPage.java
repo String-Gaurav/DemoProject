@@ -36,6 +36,9 @@ public class LoginPage {
     private List<WebElement> socialMediaLink;
     private By googleSigUpButton = By.xpath("//*[@id='a11y-signup-with-google']");
     private By popupCloseButton = By.xpath("//button[@class='socialtos__close js__socialtos-close']//*[local-name()='svg']");
+    private By checkYourEmail = By.xpath("//h1[text()='Check your email']");
+
+
 
 
     public LoginPage(WebDriver driver) {
@@ -81,14 +84,19 @@ public class LoginPage {
 
     }
 
-    public void confirmEmailAddress() {
+    public void confirmEmailAddress(String emailVerificationMsg) {
 
         System.out.println("Email Address :-" + randomEmailAddress);
         String actualEmail = driver.findElement(confirmationEmailAddress).getAttribute("innerText");
         System.out.println("Actual Email address :-" + actualEmail);
 
-
+String actualEmailText= driver.findElement(checkYourEmail).getText();
+log.info("Actual Email Text after signup :-"+actualEmailText );
         Assert.assertEquals(randomEmailAddress, actualEmail);
+        Assert.assertEquals(emailVerificationMsg, actualEmailText);
+
+
+
 
 
     }

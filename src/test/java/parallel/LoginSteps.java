@@ -78,10 +78,10 @@ public class LoginSteps extends ConfigReader {
 
     }
 
-    @Then("^Verify the email address after singing up$")
-    public void verify_afterConfirmationText() {
+    @Then("^Verify the email address after singing up \"([^\"]*)\"$")
+    public void verify_afterConfirmationText(String emailVerificationMsg) {
 
-        loginPage.confirmEmailAddress();
+        loginPage.confirmEmailAddress(emailVerificationMsg);
 
 
     }
