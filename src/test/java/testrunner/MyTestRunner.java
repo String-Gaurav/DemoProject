@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/parallel"},
         glue = {"parallel"}
-        ,tags = "@positive"
+        ,tags = "@Positive"
 
         ,plugin = {"pretty",
         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
