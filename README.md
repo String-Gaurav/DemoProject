@@ -25,15 +25,16 @@ Setup JAVA_HOME path
 - Install MAVEN- https://maven.apache.org/download.cgi
 Setup .M2 and MAVEN_HOME path as per the below screenshot
 ![image](https://user-images.githubusercontent.com/88622330/128636681-414f6dab-7205-4725-97be-b94fe36d5864.png)
-- Download and Import the project
-- Let MAVEN to install all the dependencies
-- Run Below MAVEN Commands in CMD
+- Download and Import the project.
+- Let MAVEN to install all the dependencies.
+- Run Below MAVEN Commands in CMD.
 
-
-* mvn clean
-* mvn compile
-* mvn test -Dcucumber.filter.tags="@Positive"
-* mvn test -Dcucumber.filter.tags="@Negative"
+```
+ mvn clean
+ mvn compile
+ mvn test -Dcucumber.filter.tags="@Positive"
+ mvn test -Dcucumber.filter.tags="@Negative"
+  ``` 
 	
 ## About Test Framework
 The framework has following features
